@@ -1,6 +1,6 @@
 # Regex-Tutorial
 
-17. Computer Science for JavaScript Challenge
+- Computer Science for JavaScript Challenge
 
 ## Summary
 
@@ -38,7 +38,7 @@ Additionally {2,6} as another greedy quantifier to specify the input should be a
 
 Grouping is done with the round brackets or parentheses and allows to to group a certain part of the regular expression together.
 
-- /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+- `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 This expression would be split like so:
 
@@ -73,6 +73,11 @@ Flags are optional parameters that we can add to a plain expression to make it s
 - `u` (Unicode) Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.
 
 ### Character Escapes
+
+As previously mentioned, we use the `\` backslash to "escape" the following character.
+
+- For characters that are usually treated literally, the `\` indicates that the next character is special and NOT to be interpreted literally.
+- For characters that are usually treated specially, the `\` indicates that the next character is not special and SHOULD be interpreted literally. As in `(https?:\/\/)`
 
 ## Author
 
